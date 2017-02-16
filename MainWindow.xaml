@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContarHorasFacilmente"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Contador de horas facil :D" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="stkJornadas"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="178"/>
+                <ColumnDefinition Width="178"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnAddNew" Content="Añadir Nueva" Click="btnAddNew_Click"/>
+            <CheckBox x:Name="chkEliminarHaciendoClick" Grid.Column="1" Content="Eliminar haciendo click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Viewbox Grid.Column="2">
+                <TextBox x:Name="txtResultado" IsReadOnly="True"/>
+            </Viewbox>
+
+        </Grid>
     </Grid>
+
+
 </Window>
