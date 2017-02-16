@@ -11,7 +11,9 @@
             <RowDefinition Height="57*"/>
             <RowDefinition Height="7*"/>
         </Grid.RowDefinitions>
-        <StackPanel x:Name="stkJornadas"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="stkJornadas"/>
+        </ScrollViewer>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="178"/>
